@@ -1,0 +1,251 @@
+a:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p:focus {
+    outline: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+
+.header-content {
+    &__link {
+        transition: text-shadow ease-in-out .3s;
+
+        &:hover {
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+        }
+
+        &:focus {
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+        }
+
+        &:active {
+            outline: none;
+        }
+    }
+
+    &__adress {
+        transition: color ease-in-out .3s;
+
+        &:hover {
+            color: $blue96;
+        }
+
+        &:focus {
+            color: $blue96;
+        }
+
+        &:active {
+            color: $blue96;
+        }
+    }
+
+    &__tel {
+        transition: color ease-in-out .3s;
+
+        &:hover {
+            color: $blue96;
+        }
+
+        &:focus {
+            color: $blue96;
+        }
+
+        &:active {
+            color: $blue96;
+        }
+    }
+
+    &__button {
+        transition: color ease-in-out .3s, background-color ease-in-out .3s;
+
+        &:hover {
+            color: $white;
+            background-color: $blue96;
+        }
+
+        &:focus {
+            color: $white;
+            background-color: $blue96;
+        }
+
+        &:active {
+            color: $white;
+            background-color: $blue96;
+        }
+    }
+}
+
+/* slider */
+
+.section-slider {
+    transition: color ease-in-out .3s, background-color ease-in-out .3s;
+
+    &__button {
+        transition: color ease-in-out .3s, background ease-in-out .3s;
+
+        &:hover {
+            color: $blue96;
+            background: url(/images/right-arrow.png) no-repeat 95% center $white;
+        }
+
+        &:focus {
+            color: $blue96;
+            background: url(/images/right-arrow.png) no-repeat 95% center $white;
+        }
+
+        &:active {
+            color: $blue96;
+            background: url(/images/right-arrow.png) no-repeat 95% center $white;
+        }
+    }
+
+    &__prev {
+        transition: text-shadow ease-in-out .3s;
+
+        &:hover {
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+        }
+    }
+
+    &__next {
+        transition: text-shadow ease-in-out .3s;
+
+        &:hover {
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+        }
+    }
+
+    /* agreement */
+
+    &__agreement {
+        &-link {
+            transition: text-decoration ease-in-out .3s;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    /* offer */
+
+    &__offer:hover {
+        animation: shaking 0.25s infinite;
+    }
+
+    @keyframes shaking {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(2deg);
+        }
+
+        50% {
+            transform: rotate(0eg);
+        }
+
+        75% {
+            transform: rotate(-2deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+/* section-product */
+
+.swiper-button {
+    &-next.section-product {
+
+        &__next {
+            transition: text-shadow ease-in-out .3s, color ease-in-out .3s;
+
+            &:hover {
+                color: $white;
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+            }
+        }
+    }
+
+    &-prev.section-product {
+
+        &__prev {
+            transition: text-shadow ease-in-out .3s, color ease-in-out .3s;
+
+            &:hover {
+                color: $white;
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $blue96, 0 0 30px $blue96, 0 0 40px $blue96, 0 0 55px $blue96, 0 0 75px $blue96;
+            }
+        }
+    }
+}
+
+.section-product {
+    &__benefit {
+        transition: background-color ease-in-out .3s;
+
+        &:hover {
+            background-color: $blue96;
+        }
+
+        &:focus {
+            background-color: $blue96;
+        }
+
+        &:active {
+            background-color: $blue96;
+        }
+    }
+
+    &__item:nth-child(1) {
+        & .section-product__item-link {
+            transition: background ease-in-out .3s, color ease-in-out .3s;
+
+            &:hover {
+                color: $white;
+                background: url(/images/right-arrow-white.png) no-repeat 95% center $black;
+            }
+        }
+    }
+
+    &__item:nth-child(2) {
+        & .section-product__item-link {
+            transition: background ease-in-out .3s, color ease-in-out .3s, border ease-in-out .3s;
+
+            &:hover {
+                background: url(/images/right-arrow.png) no-repeat 95% center $white;
+                border: 1px solid $black;
+            }
+        }
+    }
+
+    &__item:nth-child(3) {
+        & .section-product__item-link {
+            transition: background ease-in-out .3s, color ease-in-out .3s, border ease-in-out .3s;
+
+            &:hover {
+                border-color: $blue71;
+                background: $blue71;
+            }
+        }
+    }
+}

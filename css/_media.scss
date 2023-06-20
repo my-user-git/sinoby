@@ -1,0 +1,441 @@
+/* 1200 */
+
+@media (max-width: 1400px) {
+    .section-product {
+        &__picture {
+            &-right {
+                display: none;
+            }
+        }
+    }
+}
+
+/* 1100px */
+
+@media (max-width: 1100px) {
+    .header-content {
+        &__menus {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+        }
+
+        &__nav {
+            &:first-child {
+                width: 45%;
+                margin: 0 auto;
+            }
+        }
+
+        &__nav {
+            &:last-child {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .section-slider {
+        &__form {
+            grid-template-areas:
+                "top"
+                "center"
+                "bottom";
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr) min-content;
+            row-gap: 10px;
+        }
+
+        &__tel {
+            grid-area: top;
+            margin-right: 0;
+        }
+
+        &__button {
+            grid-area: center;
+        }
+
+        &__agreement {
+            grid-area: bottom;
+            margin-top: 0;
+        }
+
+        &__offer {
+            height: 50%;
+
+            &-txt {
+                font-size: 18px;
+
+                & span {
+                    font-size: 26px;
+                }
+            }
+
+            &-percent {
+                font-size: 35px;
+
+                & span:last-child {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__booking {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+        }
+    }
+
+    .swiper {
+        &-button-prev {
+            &.section-slider__prev {
+                left: 15px;
+            }
+        }
+
+        &-button-next {
+            &.section-slider__next {
+                right: 15px;
+            }
+        }
+    }
+
+    .section-product {
+        &__h2 {
+            font-size: 40px;
+        }
+
+        &__warranty {
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+            text-align: center;
+
+            &-link br {
+                display: none;
+            }
+        }
+    }
+}
+
+/* 992px */
+
+@media (max-width: 991px) {
+    .header-content {
+        &__logo {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 15px;
+
+            & img:first-child {
+                border-right: none;
+            }
+
+            & img:last-child {
+                padding-left: 0;
+            }
+        }
+
+        &__menus {
+            display: flex;
+        }
+
+        &__nav {
+            display: none;
+
+            &-active {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 25px 25px;
+                background-color: $white;
+                z-index: 10;
+
+                & .header-content__link {
+                    color: $blue96;
+
+                    &:not(:last-child) {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+
+            &:first-child {
+                width: 50%;
+            }
+
+            &:last-child {
+                width: 50%;
+            }
+
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    .section-product {
+        &__additionally {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        &__benefit {
+            margin-bottom: 20px;
+        }
+
+        &__icon:nth-child(3) {
+            grid-column: 1/1;
+
+        }
+    }
+}
+
+/* 800px */
+
+@media (max-width: 799px) {
+    .header-content {
+        &__top {
+            display: grid;
+            grid-template-areas:
+                "logo adress button"
+                "logo tel button";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: auto;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        &__logo {
+            grid-area: logo;
+        }
+
+        &__adress {
+            grid-area: adress;
+        }
+
+        &__tel {
+            grid-area: tel;
+        }
+
+        &__button {
+            grid-area: button;
+        }
+    }
+
+    .section-product {
+        &__card {
+            grid-template-areas:
+                "slider"
+                "desc";
+            grid-template-columns: 1fr;
+            grid-template-rows: 510px 1fr;
+            row-gap: 30px;
+        }
+
+        &__slider {
+            grid-area: slider;
+        }
+
+        &__desc {
+            grid-area: desc;
+        }
+
+        &__picture-left {
+            left: -280px;
+        }
+
+        &__swiper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__pagination {
+            position: relative;
+            text-align: left;
+        }
+    }
+}
+
+/* 700px */
+
+@media (max-width: 699px) {
+    .header-content {
+        &__top {
+            grid-template-areas:
+                "logo logo logo"
+                "adress tel button";
+            column-gap: 5px;
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img:first-child {
+                padding-right: 24px;
+                border-right: 1px solid $dark47;
+            }
+
+            & img:last-child {
+                padding-left: 24px;
+            }
+        }
+    }
+
+    .section-slider {
+        &__h1 {
+            font-size: 30px;
+        }
+
+        &__desc {
+            font-size: 23px;
+        }
+
+        &__booking {
+            grid-template-areas:
+                "name offer"
+                "center center";
+
+            grid-template-rows: 1fr 1fr;
+        }
+
+        &__h2 {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &__form {
+            grid-area: center;
+            grid-template-areas:
+                "tel button"
+                "left agreement";
+
+            grid-template-rows: 1fr min-content;
+            column-gap: 15px;
+        }
+
+        &__tel {
+            grid-area: tel;
+        }
+
+        &__button {
+            grid-area: button;
+        }
+
+        &__agreement {
+            grid-area: agreement;
+        }
+
+        &__offer {
+            grid-area: offer;
+            justify-self: center;
+            height: 100%;
+        }
+    }
+}
+
+/* 578px */
+
+@media (max-width: 578px) {
+    .header-content {
+        &__top {
+            grid-template-areas:
+                "logo logo logo"
+                "tel center button"
+                "adress adress adress";
+            column-gap: 5px;
+        }
+
+        &__nav:last-child {
+            width: 70%;
+        }
+
+        &__adress {
+            display: flex;
+            justify-content: center;
+
+            & span br {
+                display: none;
+            }
+
+            & span:not(last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .section-slider {
+        &__h1 {
+            line-height: 1.3;
+
+            & br {
+                display: block;
+            }
+        }
+
+        &__offer {
+            display: none;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__booking {
+            grid-template-areas:
+                "name"
+                "center";
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .section-product {
+        &__slider {
+            grid-template-columns: minmax(auto, 110px) 1fr;
+        }
+    }
+
+    .swiper-pagination.swiper-pagination-bullets.section-product__pagination {
+        left: 0;
+    }
+}
+
+/* 430px */
+
+@media (max-width: 430px) {
+    .header-content {
+        &__top {
+            grid-template-areas:
+                "logo"
+                "tel"
+                "button"
+                "adress";
+
+            row-gap: 15px;
+        }
+        
+
+        &__tel {
+            justify-self: center;
+        }
+
+        &__adress {
+            justify-self: center;
+        }
+
+        &__button {
+            justify-self: center;
+        }
+    }
+}

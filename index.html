@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобили Gelly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content__top container">
+            <a href="" class="header-content__logo">
+                <img src="./images/logo_geely.png" alt="Лого Geely">
+                <img src="./images/logo_orbis.png" alt="Лого Orbis">
+            </a>
+            <a class="header-content__adress" href="#">
+                <img src="./images/icon-map.png" alt="">
+                <span>GEELY SHYMKENT</span><br><span>Тамерлановское шоссе 90Б.</span>
+
+            </a>
+            <a class="header-content__tel" href="tel:+77780037686">
+                <img src="./images/icon-phone.png" alt="">
+                +7 (778) 003-76-86
+            </a>
+            <a class="header-content__button" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать
+                звонок</a>
+        </div>
+        <div class="header-content__bottom">
+            <div class="header-content__menus container">
+                <nav class="header-content__nav" data-target="left">
+                    <a class="header-content__link" href="">COOLRAY</a>
+                    <a class="header-content__link" href="">AZKARRA</a>
+                    <a class="header-content__link" href="">TUGELLA</a>
+                    <a class="header-content__link" href="">MONJARO</a>
+                </nav>
+                <div class="header-content__burger" data-path="left">
+                    <svg class="header-content__burger-svg">
+                        <use xlink:href="./images/sprite.svg#burger-left"></use>
+                    </svg>
+                </div>
+                <div class="header-content__burger" data-path="right">
+                    <svg class="header-content__burger-svg">
+                        <use xlink:href="./images/sprite.svg#burger-right"></use>
+                    </svg>
+                </div>
+                <nav class="header-content__nav" data-target="right">
+                    <a class="header-content__link" href="">ПОДБОР КОМПЛЕКТАЦИЙ</a>
+                    <a class="header-content__link" href="">ТРЕЙД-ИН</a>
+                    <a class="header-content__link" href="">КРЕДИТ</a>
+                    <a class="header-content__link" href="">ТЕСТ-ДРАЙВ</a>
+                    <a class="header-content__link" href="">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-slider">
+            <picture class="section-slider__picture" tabindex="0">
+                <!-- <source srcset="images/hero-1-320.jpg" media="(max-width:320px)">
+                <source srcset="images/hero-1-768.jpg" media="(max-width:768px)">
+                <source srcset="./images/banner1-1200.jpg" media="(max-width:1200px)"> -->
+                <img class="section-slider__img" src="./images/banner1.jpg" alt="">
+            </picture>
+            <div class="section-clider__content container">
+                <!-- Slider main container -->
+                <div class="swiper section-slider__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper section-slider__wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide section-slider__slide">
+                            <h1 class="section-slider__h1">GEELY с выгодой<br> 3 000 000 ₸</h1>
+                            <p class="section-slider__desc">Рассрочка на 1 год — <span
+                                    class="section-slider__percent">0%</span></p>
+                            <p class="section-slider__desc">Кредит на 2 года ставка — <span
+                                    class="section-slider__percent">10%</span></p>
+                            <p class="section-slider__desc">Кредит на 5 лет ставка — <span
+                                    class="section-slider__percent">15.5%</span></p>
+                            <div class="section-slider__booking">
+                                <h2 class="section-slider__h2">Успейте забронировать!</h2>
+                                <form class="section-slider__form">
+                                    <input class="section-slider__tel" name="tel" type="tel"
+                                        placeholder="Номер телефона" data-validate-field="tel"
+                                        data-validate-rules="phone" aria-label="Введите свой телефон">
+                                    <button class="section-slider__button" name="submit" disabled>Получить предложение
+                                    </button>
+                                    <div class="section-slider__agreement">
+                                        <input class="section-slider__check" type="checkbox" id="checkbox"
+                                            name="checkbox"
+                                            onchange="document.querySelector('.section-slider__button').disabled = !this.checked;">
+                                        <label class="section-slider__label" for="checkbox"> Согласен на <a
+                                                class="section-slider__agreement-link" href="">обработку
+                                                персональных данных</a>
+                                        </label>
+                                    </div>
+                                </form>
+                                <div class="section-slider__offer">
+                                    <p class="section-slider__offer-txt"><span>Честная</span>рассрочка</p>
+                                    <p class="section-slider__offer-percent"><span>0.01</span><span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-slider__slide">
+                            <h1 class="section-slider__h1">COOLRAY</h1>
+                            <div class="section-slider__booking">
+                                <h2 class="section-slider__h2">Успейте забронировать</h2>
+                                <form class="section-slider__form">
+                                    <input class="section-slider__tel" name="tel" type="tel"
+                                        placeholder="Номер телефона" data-validate-field="tel"
+                                        data-validate-rules="phone" aria-label="Введите свой телефон">
+                                    <button class="section-slider__button" name="submit" disabled>Получить предложение
+                                        <img src="./images/right-arrow-white.png" alt="">
+                                    </button>
+                                    <div class="section-slider__agreement">
+                                        <input class="section-slider__check" type="checkbox" id="checkbox3"
+                                            name="checkbox"
+                                            onchange="document.querySelector('.section-slider__button').disabled = !this.checked;">
+                                        <label class="section-slider__label" for="checkbox"> Согласен на <span>обработку
+                                                персональных данных</span>
+                                        </label>
+                                    </div>
+                                </form>
+                                <div class="section-slider__offer">
+                                    <p class="section-slider__offer-txt"><span>Честная</span>рассрочка</p>
+                                    <p class="section-slider__offer-percent">0.01<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-slider__slide">
+                            <h1 class="section-slider__h1">AZKARRA</h1>
+                            <div class="section-slider__booking">
+                                <h2 class="section-slider__h2">Успейте забронировать</h2>
+                                <form class="section-slider__form" autocomplete="off">
+                                    <input class="section-slider__tel" name="tel" type="tel"
+                                        placeholder="Номер телефона" data-validate-field="tel"
+                                        data-validate-rules="phone" aria-label="Введите свой телефон">
+                                    <button class="section-slider__button" name="submit" disabled>Получить предложение
+                                        <img src="./images/right-arrow-white.png" alt="">
+                                    </button>
+                                    <div class="section-slider__agreement">
+                                        <input class="section-slider__check" type="checkbox" id="checkbox2"
+                                            name="checkbox"
+                                            onchange="document.querySelector('.section-slider__button').disabled = !this.checked;">
+                                        <label class="section-slider__label" for="checkbox"> Согласен на <span>обработку
+                                                персональных данных</span>
+                                        </label>
+                                    </div>
+                                </form>
+                                <div class="section-slider__offer">
+                                    <p class="section-slider__offer-txt"><span>Честная</span>рассрочка</p>
+                                    <p class="section-slider__offer-percent">0.01<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination section-slider__pagination"></div> -->
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev section-slider__prev"></div>
+                <div class="swiper-button-next section-slider__next"></div>
+            </div>
+        </section>
+        <section class="section-product">
+            <div class="section-product__card container">
+                <div class="section-product__slider">
+                    <picture class="section-product__picture-left" tabindex="0">
+                        <img class="section-product__picture-img" src="./images/product_bg.png" alt="">
+                    </picture>
+                    <div class="section-product__warranty">
+                        <img class="section-product__warranty-img" src="./images/warranty.png" alt="">
+                        <a class="section-product__warranty-link" href="">Подобрать<br> комплектацию<br>
+                            <img src="./images/right-arrow-coml.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper section-product__swiper">
+                        <div class="swiper-wrapper section-product__wrapper">
+                            <div class="swiper-slide section-product__slide">
+                                <img src="./images/coolray_red.png" alt="model">
+                            </div>
+                            <div class="swiper-slide section-product__slide">
+                                <img src="./images/coolray_light.png" alt="model">
+                            </div>
+                            <div class="swiper-slide section-product__slide">
+                                <img src="./images/coolray_light.png" alt="model">
+                            </div>
+                            <div class="swiper-slide section-product__slide">
+                                <img src="./images/coolray_black.png" alt="model">
+                            </div>
+                            <div class="swiper-slide section-product__slide">
+                                <img src="./images/coolray_blue.png" alt="model">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination section-product__pagination"></div>
+                    </div>
+
+                    <!-- Thumbs -->
+                    <div class="swiper section-product__thumbs">
+                        <div class="swiper-wrapper section-product__wrapper-thumbs">
+                            <div class="swiper-slide section-product__slide-thumb">
+                                <img src="./images/coolray_black.png" alt="color">
+                            </div>
+                            <div class="swiper-slide section-product__slide-thumb">
+                                <img src="./images/coolray_red.png" alt="color">
+                            </div>
+                            <div class="swiper-slide section-product__slide-thumb">
+                                <img src="./images/coolray1.png" alt="color">
+                            </div>
+                            <div class="swiper-slide section-product__slide-thumb">
+                                <img src="./images/coolray2.png" alt="color">
+                            </div>
+                            <div class="swiper-slide section-product__slide-thumb">
+                                <img src="./images/coolray3.png" alt="color">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next section-product__next"></div>
+                    <div class="swiper-button-prev section-product__prev"></div>
+                </div>
+                <div class="section-product__desc">
+                    <picture class="section-product__picture-right" tabindex="0">
+                        <img class="section-product__picture-img" src="./images/coolray-bg.png" alt="">
+                    </picture>
+                    <h2 class="section-product__h2">
+                        Geely <span>Coolray</span>
+                    </h2>
+                    <p class="section-product__benefit" tabindex="0"><span>Выгода до</span> <span
+                            class="section-product__benefit-price">1 800 000 ₸</span></p>
+                    <div class="section-product__additionally">
+                        <div class="section-product__icon">
+                            <img src="./images/refresh.png" alt="">
+                            <p>ВЫГОДА ПО ТРЕЙД-ИН<br>до <span>900 000 ₸</span></p>
+                        </div>
+                        <div class="section-product__icon">
+                            <img src="./images/credit-card.png" alt="">
+                            <p>ВЫГОДА ПО КРЕДИТУ<br> от <span>600 000 ₸</span></p>
+                        </div>
+                        <div class="section-product__icon">
+                            <img src="./images/gift.png" alt="">
+                            <p>ПАКЕТ ДОП, ОБОРУДОВАНИЯ <br> В ПОДАРОК <span>300 000 ₸</span></p>
+                        </div>
+                    </div>
+                    <ul class="section-product__list">
+                        <li class="section-product__item">
+                            <a class="section-product__item-link" href="">Записаться на тест-драйв
+                            </a>
+                        </li>
+                        <li class="section-product__item">
+                            <a class="section-product__item-link" href="">Честная рассрочка <strong>0.01%</strong>
+                            </a>
+                        </li>
+                        <li class="section-product__item">
+                            <a class="section-product__item-link" href="">Узнать цену
+                                <img src="./images/right-arrow-white.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal -->
+    <div style="display: none;" id="hidden-content">
+        <div class="modal__h3">Оставьте заявку</div>
+        <p class="modal__txt">
+            Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время
+        </p>
+        <form class="modal__form" autocomplete="off">
+            <div class="modal__field">
+                <input class="modal__input" id="modal-name" name="name" type="text" placeholder="Как к Вам обращаться*"
+                    data-validate-field="name" aria-label="Введите своё имя">
+            </div>
+            <div class="modal__field">
+                <input class="modal__input" id="modal-tel" name="tel" type="tel" placeholder="Телефон*"
+                    data-validate-field="tel" data-validate-rules="phone" aria-label="Введите свой телефон">
+            </div>
+            <button class="modal__button" type="submit">Оставить заявку</button>
+        </form>
+        <p class="modal__agreement">Нажимая на кнопку «Отправить заявку»,
+            Вы даете согласие на
+            <a class="modal__agreement-link">обработку персональных данных
+            </a>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- / Swiper JS -->
+    <script src="./js/slider.js"></script>
+    <script src="js/form-validate.js"></script>
+    <!-- burger-->
+    <script src="./js/burger.js"></script>
+</body>
+
+</html>
